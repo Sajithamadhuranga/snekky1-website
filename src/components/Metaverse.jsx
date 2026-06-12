@@ -20,7 +20,7 @@ const items = [
 
 export default function Metaverse() {
   return (
-    <section id="metaverse" className="bg-snekkyDark py-8 sm:py-10 px-4 sm:px-8 lg:px-16">
+    <section id="metaverse" className="bg-snekkyYellow py-8 sm:py-10 px-4 sm:px-8 lg:px-16">
       <div className="flex flex-col gap-4 sm:gap-6 max-w-5xl mx-auto">
         {items.map((item) => (
           <div

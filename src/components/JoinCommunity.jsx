@@ -17,8 +17,14 @@ const updates = [
 
 export default function JoinCommunity() {
   return (
-    <section id="join-community" className="relative bg-snekkyDark text-white overflow-hidden">
-      {/* Top diagonal banner area */}
+    <section id="join-community" className="relative bg-snekkyYellow text-snekkyDark overflow-hidden">
+      {/* Black triangle in top-left corner */}
+      <div
+        className="absolute top-0 left-0 w-full h-full bg-snekkyDark pointer-events-none"
+        style={{ clipPath: 'polygon(0 0, 40% 0, 0 40%)' }}
+      />
+
+      {/* Top area */}
       <div className="relative px-6 sm:px-10 lg:px-16 pt-10 pb-16 sm:pb-24 overflow-hidden">
         {/* Back button */}
         <button
@@ -55,10 +61,10 @@ export default function JoinCommunity() {
         <div className="relative z-10 grid lg:grid-cols-[1fr_auto_1fr] gap-8 lg:gap-12 items-center">
           {/* Left text */}
           <div className="text-center lg:text-left">
-            <h3 className="font-display text-lg sm:text-2xl uppercase mb-3 leading-snug">
+            <h3 className="font-display text-white sm:text-4xl uppercase mb-3 leading-snug">
               Join Me and Together We Will Reach the Stars
             </h3>
-            <p className="text-xs sm:text-sm text-white/70 max-w-sm mx-auto lg:mx-0">
+            <p className="text-xs sm:text-sm text-white max-w-sm mx-auto lg:mx-0">
               Follow the story of snekky. Mars as he explores the greatest mysteries
               of the universe and seeks to return to the planet he once called home
               with the help of his friendly AI, made during his intergalactic travels.
@@ -76,13 +82,13 @@ export default function JoinCommunity() {
 
           {/* Follow buttons */}
           <div className="flex flex-col gap-4 items-center lg:items-end">
-            <button className="w-full max-w-xs flex items-center justify-between gap-3 rounded-full bg-gradient-to-r from-snekkyOrange to-amber-700 px-6 py-3 font-semibold hover:scale-105 transition">
+            <button className="w-full max-w-xs flex items-center justify-between gap-3 rounded-full bg-gradient-to-r from-snekkyOrange to-amber-700 px-6 py-3 font-semibold text-white hover:scale-105 transition">
               Follow
               <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M22 2L2 9l7 3 9-7-7 9 3 7 8-19z" />
               </svg>
             </button>
-            <button className="w-full max-w-xs flex items-center justify-between gap-3 rounded-full bg-gradient-to-r from-snekkyOrange to-amber-700 px-6 py-3 font-semibold hover:scale-105 transition">
+            <button className="w-full max-w-xs flex items-center justify-between gap-3 rounded-full bg-gradient-to-r from-snekkyOrange to-amber-700 px-6 py-3 font-semibold text-white hover:scale-105 transition">
               Follow
               <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
@@ -92,8 +98,8 @@ export default function JoinCommunity() {
         </div>
       </div>
 
-      {/* Bottom yellow section */}
-      <div className="relative bg-snekkyYellow text-snekkyDark px-6 sm:px-10 lg:px-16 py-12 sm:py-16">
+      {/* Bottom area */}
+      <div className="relative px-6 sm:px-10 lg:px-16 py-12 sm:py-16">
         <div className="grid lg:grid-cols-[auto_1fr] gap-8 lg:gap-12 items-center">
           {/* Left mascot + vertical text */}
           <div className="relative flex items-center justify-center lg:justify-start gap-2 sm:gap-4">
@@ -113,7 +119,7 @@ export default function JoinCommunity() {
             {updates.map((update, i) => (
               <div
                 key={i}
-                className="flex items-stretch gap-4 rounded-2xl bg-snekkyDark p-3 sm:p-4"
+                className="flex items-stretch gap-4 rounded-2xl bg-snekkyOrange p-3 sm:p-4"
               >
                 <AssetImage
                   src={update.image}

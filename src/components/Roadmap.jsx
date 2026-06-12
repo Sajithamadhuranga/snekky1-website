@@ -38,7 +38,7 @@ export default function Roadmap() {
               <AssetImage
                 src={phase.image}
                 alt={phase.badge}
-                className="w-full h-40 sm:h-48 object-cover"
+                className="w-full h-40 sm:h-48 object-"
               />
               <span className="absolute bottom-3 left-3 bg-snekkyDark text-snekkyYellow text-[10px] sm:text-xs font-bold px-3 py-1.5 rounded-full -rotate-3 shadow-lg">
                 {phase.badge}

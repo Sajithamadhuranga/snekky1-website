@@ -26,21 +26,24 @@ export default function App() {
           <AboutUs />
         </section>
 
-        <section id="more" className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 lg:py-12">
-          <div className="rounded-[2rem] border border-black/10 bg-white/60 p-4 shadow-[0_20px_50px_rgba(0,0,0,0.06)] backdrop-blur sm:p-6 lg:p-8">
-            <div className="mb-8 flex items-center justify-between">
-              <h2 className="font-display text-3xl uppercase text-snekkyDark sm:text-4xl">
-                More from Snekky
-              </h2>
-            </div>
-            <div className="space-y-8">
-              <JoinCommunity />
-              <HowToBuy />
-              <Tokenomics />
-              <Roadmap />
-              <Metaverse />
-            </div>
-          </div>
+        <section id="join-community" className="scroll-mt-24">
+          <JoinCommunity />
+        </section>
+
+        <section id="how-to-buy" className="scroll-mt-24">
+          <HowToBuy />
+        </section>
+
+        <section id="tokenomics" className="scroll-mt-24">
+          <Tokenomics />
+        </section>
+
+        <section id="road-map" className="scroll-mt-24">
+          <Roadmap />
+        </section>
+
+        <section id="metaverse" className="scroll-mt-24">
+          <Metaverse />
         </section>
       </main>
       <JoinCommunityFooter />

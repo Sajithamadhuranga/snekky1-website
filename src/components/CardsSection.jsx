@@ -27,7 +27,7 @@ export default function CardsSection() {
             className="h-48 w-auto sm:h-64 md:h-80 lg:h-96 object-contain drop-shadow-2xl"
           />
           {/* Click here button positioned on mascot's tail */}
-          <button className="absolute bottom-[14%] left-1/2 -translate-x-1/2 bg-white text-sm sm:text-sm md:text-base font-semibold px-3 py-1.5 sm:px-6 sm:py-2 rounded-full -rotate-12 shadow-lg hover:scale-105 transition">
+          <button className="absolute bottom-[14%] left-1/2 -translate-x-1/2 bg-text-sm sm:text-sm md:text-base font-semibold px-3 py-1.5 sm:px-6 sm:py-2 rounded-full -rotate-12 shadow-lg hover:scale-105 transition">
             Click here
           </button>
         </div>
